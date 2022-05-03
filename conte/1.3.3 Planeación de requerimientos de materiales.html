@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>1.3.3 Planeación de requerimientos de materiales</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="1.3.2 Planeación maestra de la producción.html"><i class="icon-left-open-outline"></i>1.3.2 Planeación maestra de la producción</a></li>
+                    <li><a href="1.3.4 Programación y control de piso.html">1.3.4 Programación y control de piso<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>1.3.3 Planeación de requerimientos de materiales</h3>
+                    <p>&nbsp &nbsp &nbsp La planeación de requerimiento de materiales o mejor conocida por sus siglas en inglés como MRP (Material Requirements Planning), es como se puede ver en la figura 1, el eslabón entre el MPS y la programación y control de piso cumple una función fundamental en el control sobre todo de las recepciones de materia prima y envíos de producto terminado, así como del control de los niveles de inventario respectivo (Berry et al., 2018).</p>
+                    <p>&nbsp &nbsp &nbsp Antes de empezar a elaborar cualquier plan de requerimiento de materiales, será indispensable contar con una lista de materiales, y posteriormente desarrollar la explosión de materiales o mejor conocida como BOM (Bill of materials), cómo se puede ver en la figura 2:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1HNqEeyNzcudKxIzeu3bGyuEi9YRbzpTa">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede observar en la figura 2 la lista de materiales se basa en el desarrollo de todos aquellos componentes que parten del ensamble final y que de forma sucesiva se va descomponiendo en distintos subensambles, hasta formar toda la familia del ensamble final, el cual se descompone en un árbol que empieza en el nivel (0), que es el ensamble final y de arriba hacia abajo a los distintos subniveles, en cada subnivel se van señalando entre paréntesis, cuántos subcomponentes de este subensamble en específico son necesarios, para converger en tiempo y volumen en el ensamble final, de esta forma se cuenta con la información necesaria para desarrollar el MRP, el cuál debe ser planeado para el ensamble final y los distintos subensambles, a diferencia del MPS, que solo se enfoca en el ensamble final.</p>
+                    <p>&nbsp &nbsp &nbsp Dentro del sistema MRP, existen diversos conceptos que son básicos para entender su mecanismo y comportamiento, los cuales son listados a continuación:</p>
+                    <ul>
+                        <li>Requerimientos brutos.- Es la cantidad total de artículos requeridos, sobre un horizonte de tiempo determinado, relacionado de forma directa con el insumo o ensamble final.</li>
+                        <li>Recepciones programadas.- Son aquellos pedidos que hayan sido comprometidos de tal suerte que se pueden determinar como una orden de producción o de compra, se asume que el recurso ya está comprometido para ser procesado, almacenado y/o entregado al cliente.</li>
+                        <li>Nivel de inventario disponible.- Es la cantidad de artículos disponibles en cualquier periodo de tiempo, ya sea para ser manufacturados, almacenados y/o entregados al cliente.</li>
+                        <li>Requerimientos netos.- Es el resultado del ajuste llevado a cabo en los requerimientos brutos con respecto al nivel de inventario disponible y las recepciones programadas.</li>
+                        <li>Ordenes planificadas.- Se refiere a la cantidad de requerimientos netos a ser liberados en concordancia con el MPS, considerando el tamaño de los lotes y los tiempos de entrega.</li>
+                    </ul>
+                    <p>Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que se tiene la siguiente lista de materiales con su respectiva explosión de materiales y sus distintos subensambles:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1syDBeT_drrbxSlKCGeXhBfxlJoBzmvvM">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp El ejemplo tal como se muestra en la figura 3 se refiere a los componentes y distintos subcomponentes en el armado de una silla, para cada uno de ellos existen un ensamble final y distintos niveles de subensambles, supongamos que la silla tiene un requerimiento bruto de 1000 piezas, para el fin de mes, por lo que para su fabricación se deben seguir una serie de políticas que son:</p>
+                    <ul>
+                        <li>El tiempo de entrega es de una semana, en el caso de recepciones y pedidos programados.</li>
+                        <li>La cantidad máxima para fabricar por semana es de 300 artículos.</li>
+                        <li>El inventario no puede ser menor a 200 artículos por semana.</li>
+                        <li>Los distintos ensambles se tendrán que ajustar a la política de ensamble final.</li>
+                    </ul>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1hS-fUgdplpvpAFpL_d4RHSg3iUS-mwSt">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 1 el ensamble final, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 1000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 200 artículos como inventario mínimo, por otro lado para los restantes subensambles el comportamiento sería como a continuación se muestra:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1EmOMQZ6HbWKiwu_7GpAtSmWHlL3X62MX">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 2 el subensamble B, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 1000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 200 artículos como inventario mínimo.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1Oort__eLHuvl80MOVATkzdm70tp_sS7l">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 3 el subensamble E, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 1000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 200 artículos como inventario mínimo.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1Vzj1qFnNVfh8xZBYecHAHQb5Yl1fazKN">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 4 el subensamble C, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 1000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 200 artículos como inventario mínimo.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1kiaRN6qbTFLiPTgvACYjOPniAk5_qHsW">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 5 el subensamble D, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 10000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 2000 artículos como inventario mínimo.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=12kSNtAytXgCgVxmXGaVbSlNUnyPx-3ch">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 6 el subensamble G, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 2000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 400 artículos como inventario mínimo.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=14HxSnIIldEy34yMr69hGtvgxY0awUxdl">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede analizar en la Tabla 7 el subensamble F, para su entrega se divide en 4 semanas con la finalidad de ir haciendo entregas parciales, hasta completar el lote de 2000 artículos a ser entregados al final del mes, considerando que solo se requiere una parte para el siguiente nivel, respetando las políticas de tiempos de entrega, tamaño de lote y disponibilidad en el periodo 0, o inicial, también es importante hacer mención que se respeta la política de mantener 400 artículos como inventario mínimo.</p>
+                </div>
+            </section>   
+
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

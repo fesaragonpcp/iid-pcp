@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>2.3.1.2 Suavización exponencial</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="2.3.1.1 Promedios móviles.html"><i class="icon-left-open-outline"></i>2.3.1.1 Promedios móviles</a></li>
+                    <li><a href="2.3.1.3 Variaciones ciclicas y estacionales de los datos.html">2.3.1.3 Variaciones ciclicas y estacionales de los datos<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>2.3.1.2 Suavización exponencial</h3>
+                    <p>&nbsp &nbsp &nbsp El método de suavización exponencial es de amplio uso, sobre todo en el caso que se desee suavizar las fluctuaciones que frecuentemente existen en la demanda la fórmula más usada de forma extendida es la siguiente:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1OjFNqHBf11D5m6tfdkaFn6dPDtfRPxkM">
+                    </div>
+                    <p>En donde:</p>
+                    <ul>
+                        <li>F= es el pronóstico (Forecasting)</li>
+                        <li>t = Es el periodo de tiempo actualizado.</li>
+                        <li>At = Es la demanda actualizada en el periodo t.</li>
+                        <li>𝛼 = Constante de suavización exponencial.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp El concepto se puede considerar más fácil de entender a partir del desarrollo de ejemplos prácticos, como el que a continuación se presenta:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que en el ejemplo de la empresa que fabrica muebles se tienen los datos registrados de las ventas de 6 meses anteriores y se utiliza la suavización exponencial a partir del periodo 4 con alfa igual a 0.2, 0.5 y 0.9, para analizar en cada caso qué sucede, los datos correspondientes al periodo, la demanda y el pronóstico son registrados en la tabla 17,18 y 19 y su correspondiente gráfica que se muestra en la figura 7, 8 y 9.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1tcyFLOrqk4vGv0o4UqB59AVXqxpYN9Ic">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1apCmuqVcEYswxS2o8Mox0Rpo9FnND6sn">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=179WLkxwuAGaZkVV6DoGR-ZBWjg4qj0JG">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1mAoBUBDRggTgY2fLpg8Rx_kIAiNjCmcu">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1EXPTvN4JT4tl12Qd_8JNpoyADreNAy1D">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1dM5T6ALk9j9oh-jJiSCZLeD5w8mill14">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Analizando la información tanto tabular como gráfica contenida en las tablas y figuras precedentes se puede concluir que cuando la constante alfa = 0.2 el suavizamiento de los cambios en la línea de pronóstico, permanece casi inalterado, pero conforme va subiendo de valor dicha constante por ejemplo en alfa igual a 0.5,empieza a mostrar signos de poca suavización a los cambios y mayor ajuste a la línea de tendencia, lo cual se hace bastante evidente en el momento que el valor de esta constante llega a 0.9, ya que a cualquier cambio en el valor de la demanda el pronóstico inmediatamente se ajusta en el periodo subsecuente, por lo que generalmente se recomienda hacer uso de aquel pronóstico que presente la menor desviación media absoluta (MAD) la cual se analizará más adelante.</p>
+                </div>
+            </section>   
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

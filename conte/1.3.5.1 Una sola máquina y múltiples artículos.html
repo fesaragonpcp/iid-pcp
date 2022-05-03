@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>1.3.5.1 Una sola máquina y múltiples artículos</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="1.3.5 Balanceo de líneas.html"><i class="icon-left-open-outline"></i>1.3.5 Balanceo de líneas</a></li>
+                    <li><a href="Ejercicios propuestos EM.html">Ejercicios propuestos<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>1.3.5.1 Una sola máquina y múltiples artículos</h3>
+                    <p>&nbsp &nbsp &nbsp Se han desarrollado diversos métodos para asignar distintas prioridades, considerando una sola máquina que atiende a múltiples usuarios o aplicable también a una estación de trabajo que atiende a múltiples usuarios (Chase et al., 2000). A continuación, se muestran algunas reglas básicas, que en una gran cantidad de casos pueden obedecer al sentido común:</p>
+                    <ul>
+                        <li>Fecha de vencimiento más próxima.- Esta regla se enfoca en dar prioridad a la fecha de vencimiento más inmediata, con la finalidad de que sea la primera en ejecutarse, lo cual puede generar cuellos de botella debido a que pueden existir tareas que tengan una duración más prolongada que otras.</li>
+                        <li>Tiempo de proceso más corto.- Como su nombre lo indica se prioriza aquella actividad que tenga el tiempo de procesamiento más corto, colocándose en primer lugar y así de manera sucesiva las tareas subsecuentes en ese orden, una de las desventajas es que no se puede configurar la complejidad de la tarea.</li>
+                        <li>Holgura total.- Se basa en seleccionar aquella tarea con el menor tiempo de holgura, la cual se obtiene mediante la elección de una tarea en específico, posteriormente se calcula el tiempo total de todas las operaciones y se resta esa tarea seleccionada, la regla implica darle prioridad a aquellas tareas que tengan la holgura más pequeña, no necesariamente se considera la complejidad de la tarea, pero si aquellas tareas que por su naturaleza son más elaboradas y por consiguiente tienen poca holgura.</li>
+                        <li>Holgura por operación.- Es un mecanismo similar a la holgura total, solo que en este caso la holgura total se divide entre el número de operaciones restantes, la prioridad la tiene la tarea con menor holgura total por operación, de manera más específica se puede considerar que se puede tener una mayor aproximación a la complejidad de cada tarea en donde se puede enfocar en la holgura por operación.</li>
+                        <li>Primero en llegar, primero en salir.- Es una de las reglas con más sentido común, ya que es utilizada por una gran variedad de organismos, desde bancos, hasta estaciones de servicio, dado que únicamente se priorizan a los artículos conforme vayan llegando, sin importar su tiempo de procesamiento ni su grado de complejidad.</li>
+                        <li>Proporción crítica.- Consiste en la relación del tiempo restante hasta el vencimiento y el trabajo remanente. De forma específica el trabajo remanente se refiere al tiempo total de procesamiento y el tiempo restante hasta el vencimiento implica aquel que se desarrolla hasta que es concluido el proceso, si el resultado es mayor que 1, esto implica que existe holgura para realizar la tarea, si es igual a uno no existe holgura y en el caso de que sea menor a 1 no solo no hay holgura, sino que además existe retraso.</li>
+                    </ul>
+                    <p>Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbspSuponga que en un determinado centro de operaciones se tienen seis operaciones en espera de llevarse a cabo, los cuáles han llegado de acuerdo con la siguiente secuencia:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1f4I6fkpGclKr0iLsd1PWDfDd6uPlbPyU">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Fecha de vencimiento más próxima.- Para esta regla se tiene el siguiente planteamiento: Se enfoca en dar prioridad a la fecha de vencimiento más inmediata, con la finalidad de que sea la primera en ejecutarse, lo cual puede generar cuellos de botella debido a que pueden existir tareas que tengan una duración más prolongada que otras.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1cvScdCjxb6KLoVGV6lj2_pHWGMvtXysG">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp En este ejemplo relacionado con la fecha de vencimiento más próxima, se puede analizar que hay pocos retrasos y los eventos que lo tienen son muy pequeños.</p>
+                    <p>&nbsp &nbsp &nbsp Tiempo de procesamiento más corto.- En este ejemplo se tiene el siguiente planteamiento: Como su nombre lo indica se prioriza aquella actividad que tenga el tiempo de procesamiento más corto, colocando en primer lugar y así de manera sucesiva las tareas subsecuentes en ese orden, una de las desventajas es que no se puede configurar la complejidad de la tarea.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1zeArKsK0oQW_w7RAuJpC3HPBqLwZBZeo">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp En este ejemplo relacionado con el tiempo de procesamiento más corto, se puede analizar que hay pocos retrasos, pero los dos eventos que contienen retrasos 8.5 y 4.5, se puede considerar que son muy grandes, lo cual en algún momento pudieran generar cuellos de botella.</p>
+                    <p>&nbsp &nbsp &nbsp Tiempo de holgura total.- En este ejemplo se tiene el siguiente planteamiento: Se basa en seleccionar aquella tarea con el menor tiempo de holgura, la cual se obtiene mediante la elección de una tarea en específico, posteriormente se calcula el tiempo total de todas las operaciones y se resta esa tarea seleccionada, la regla implica darle prioridad a aquellas tareas que tengan la holgura más pequeña, no necesariamente se considera la complejidad de la tarea, pero si aquellas tareas que por su naturaleza son más elaboradas y por consiguiente tienen poca holgura, como se puede ver a continuación en la Tabla 11.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1bYSuuE5CtNmgFJ8QdeFoZ5lZAYvWBdMO">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp En este ejemplo relacionado con el tiempo de holgura total, se puede analizar que hay pocos retrasos, pero los dos eventos que contienen retrasos 8.5 y 4.5, se puede considerar que son muy grandes, lo cual en algún momento pudieran generar cuellos de botella, similar casualmente al ejemplo de la Tabla 10 del tiempo de procesamiento más corto.</p>
+                    <p>&nbsp &nbsp &nbsp Tiempo de holgura por operación.- El planteamiento de este ejemplo es como sigue: Es un mecanismo similar a la holgura total, solo que en este caso la holgura total se divide entre el número de operaciones restantes, la prioridad la tiene la tarea con menor holgura total por operación, de manera más específica se puede considerar que se puede tener una mayor aproximación a la complejidad de cada tarea en donde se puede enfocar en la holgura por operación.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1anMevR1ZYiGOzWPVFWhV8se9OcZJeuuX">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp En este ejemplo relacionado con el tiempo de holgura por operación, se puede analizar que hay pocos retrasos, pero los dos eventos que contienen retrasos 8.5 y 4.5, se puede considerar que son muy grandes, lo cual en algún momento pudieran generar cuellos de botella, similar casualmente al ejemplo de la Tabla 10 del tiempo de procesamiento más corto.</p>
+                    <p>&nbsp &nbsp &nbsp Primero en llegar, primero en salir.- El planteamiento de este ejemplo es el siguiente: Es una de las reglas con más sentido común, ya que es utilizada por una gran variedad de organismos, desde bancos, hasta estaciones de servicio, dado que únicamente se priorizan a los artículos conforme vayan llegando, sin importar su tiempo de procesamiento ni su grado de complejidad.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1AcvZs6GJyu7ZNZckgtBJdE6rDW8W4cUI">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp En este ejemplo relacionado con el primero que llega es el primero en ser servido, se puede considerar que hay pocos retrasos y los eventos que lo tienen son medianamente pequeños.</p>
+                    <p>&nbsp &nbsp &nbsp Proporción crítica.- El planeamiento de este ejemplo es el siguiente: Consiste en la relación del tiempo restante hasta el vencimiento y el trabajo remanente. De forma específica el trabajo remanente se refiere al tiempo total de procesamiento y el tiempo restante hasta el vencimiento implica aquel que se desarrolla hasta que es concluido el proceso, si el resultado es mayor que 1, esto implica que existe holgura para realizar la tarea, si es igual a uno no existe holgura y en el caso de que sea menor a 1 no solo no hay holgura, sino que además existe retraso.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1FbsPhZGSjYO05V_XimqZ3xHTo3zUau-e">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Se puede considerar que existen una gran cantidad de atrasos, por lo que definitivamente no es la opción para elegir.</p>
+                    <p>&nbsp &nbsp &nbsp Por lo que se pudo analizar los métodos que presentaron menor sumatoria en relación con los tiempos de atraso, fue el vencimiento más próximo y los de holgura total y holgura por operación, pero no siempre es así, por lo que se puede considerar que no existe un método único, todo depende del entorno en el cual se desenvuelva el problema.</p>
+                    <p>&nbsp &nbsp &nbsp Por otro lado, se han desarrollado multiplicidad de metodologías para abordar el caso en el cual se tienen múltiples máquinas y múltiples artículos, uno de los métodos más ampliamente difundidos es el Método de Johnson, que consiste en resolver procesos a través de los cuáles intervienen dos máquinas, con la finalidad de minimizar el tiempo de manufactura (Singh, 2006).</p>
+                    <p>&nbsp &nbsp &nbsp El algoritmo consiste básicamente de 4 etapas que son:</p>
+                    <ul>
+                        <li>Mostrar todas las actividades o trabajos con su correspondiente tiempo de procesamiento.</li>
+                        <li>Se procede a seleccionar el tiempo de procesamiento más corto, derivado de lo anterior se forman dos columnas paralelas que corresponden al centro de trabajo uno y al dos respectivamente, si el tiempo más corto se encuentra en la primera columna es el primero en ser programado, y si sucede lo contrario y se encuentra en la columna 2, el trabajo es programado al final, se puede presentar el caso de empate, el cuál puede ser elegido de forma arbitraria.</li>
+                        <li>Una vez realizando la programación del trabajo de la lista inicial este es borrado y se sigue la secuencia de forma continua.</li>
+                    </ul>
+                    <p>Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que se tienen las siguientes órdenes de piezas en dos distintos procesos:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1LYTT8YAePAGw17l5fDN7xA2JtEjQgEZ-">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Se procede a la selección del tiempo de procesamiento más corto que en este caso corresponde a la pieza C en la columna de troquelado, el siguiente tiempo de procesamiento corresponde a la pieza D está en la misma columna de troquelado, por lo que se pone a continuación, el siguiente tiempo más pequeño se encuentra en la columna de ensamble correspondiente a la pieza E por lo que se programa al final del proceso, el siguiente tiempo corresponde a la pieza B y finalmente la A, quedando el proceso como se muestra en la figura 4.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1r13klDn5_3yK79eRjg1GlqUsXFQQ5Ik8">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede observar en la figura 4 la secuenciación quedó definida y sin traslapes, para las tres primeras piezas (C, D y E), pero para las subsecuentes dos (A,B) si existen traslapes de consideración que pueden ocasionar retrasos y cuellos de botella sobre todo en aquellos casos en los cuales se tengan presiones por los tiempos de entrega, por lo que esta regla no está exenta de mejorarse y ser adaptable a las circunstancias del entorno en el cuál esté involucrado el proceso productivo.</p>
+                </div>
+            </section> 
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+            
+        </body>
+</html>

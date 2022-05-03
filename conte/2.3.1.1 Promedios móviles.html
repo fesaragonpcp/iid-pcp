@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>2.3.1.1 Promedios móviles</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="2.3.1 Modelos de series temporales.html"><i class="icon-left-open-outline"></i>2.3.1 Modelos de series temporales</a></li>
+                    <li><a href="2.3.1.2 Suavización exponencial.html">2.3.1.2 Suavización exponencial<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>2.3.1.1 Promedios móviles</h3>
+                    <p>&nbsp &nbsp &nbsp Su desarrollo es muy simple solo se considera el promedio temporal de los datos pasados y se va moviendo conforme avanza el tiempo, su ecuación es de la forma:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1uebjhmu7kh55NmKV0UoFFaRibsArW3rr">
+                    </div>
+                    <p>En donde:</p>
+                    <ul>
+                        <li>F= es el pronóstico (Forecasting)</li>
+                        <li>t = Es el periodo de tiempo actualizado.</li>
+                        <li>At = es la demanda actualizada en el periodo t.</li>
+                        <li>n = número de períodos involucrados.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp El concepto se puede considerar más fácil de entender a partir del desarrollo de ejemplos prácticos, como el que a continuación se presenta:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que en una empresa que fabrica muebles se tienen los datos registrados de las ventas de 6 meses anteriores y se elige utilizar un promedio móvil a tres periodos, los datos correspondientes al periodo, la demanda y el pronóstico son registrados en la tabla 16 y su correspondiente gráfica que se muestra en la figura 6.</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1twj6UVOCM07u6rfWGPRcp67KG3DZI3ax">
+                    </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1NSgYz2U5-QZ6jhtUyVRtKgVfjH9HrFNT">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Como se puede mostrar en la tabla 16 y la figura 6 , es evidente que los datos de la demanda tienen al inicio un patrón ascendente, pero al final del tiempo este decrece, por lo que el comportamiento del pronóstico de promedio móvil a tres meses se ajusta a esa tendencia y a los cambios y considerando que su simplicidad es bastante obvia, puede ser utilizado por cualquier persona con conocimientos básicos sobre graficación a análisis de datos, lo que sí se puede notar es que el promedio se ajusta de manera suave a los cambios bruscos en la tendencia, y mientras más datos se consideren el promedio tiene un comportamiento más suave, tendiendo a ser lineal, lo cual para un experto en análisis de datos pudiera ser poco útil dado el nivel de rezago que presenta el pronóstico.</p>
+                </div>
+            </section>   
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>
