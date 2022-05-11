@@ -192,6 +192,34 @@ section {
   color: black;
   padding: 25px;
 }
+.quiz {
+  height: 100%;
+  width: 90vw;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+label {
+  text-align: left;
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  list-style: none;
+}
+
+button {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #16d9e3;
+
+}
 
 footer {
   background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
