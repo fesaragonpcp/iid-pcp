@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Desafío Planeación agregada de la producción</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+
+            <section id="Banner">
+                <h2>Planeación agregada de la producción</h2>
+                <div class="quiz">
+                    <section id="p0">
+                        <br><br>
+                        <h5>Modelo basado en programación matemática esta sujeto a:</h5>
+                        <label>
+                            <input type="radio" value="4" name="p0" onclick="respuesta(0,this)">Costo de contratar personal, restricción de mano de obra en tiempo extra y cambio de fuerza laboral.
+                        </label>
+                        <label>
+                            <input type="radio" value="3" name="p0"onclick="respuesta(0,this)">Costo mensual por empleado, condiciones iniciales y restricción del cambio de fuerza laboral.
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="p0"onclick="respuesta(0,this)">Costo mensual por empleado, restricción de mano de obra en tiempo extra y condiciones iniciales.
+                        </label>
+                        <label>
+                            <input type="radio" value="1" name="p0"onclick="respuesta(0,this)">Condiciones iniciales, mano de obra en tiempo regular y restricción de inventario.
+                        </label>
+                    </section>
+                    <section id="p1">
+                        <h5>El Modelo de respuesta inmediata involucra.</h5>
+                        <label>
+                            <input type="radio" value="1" name="p1"onclick="respuesta(1,this)">Paros por mantenimiento y tasas de producción variables.
+                        </label>
+                        <label>
+                            <input type="radio" value="3" name="p1"onclick="respuesta(1,this)">Diferenciación en los tiempos de entrega de los productos y despido de personal.
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="p1"onclick="respuesta(1,this)">Variaciones en la calidad de los productos y restricción de inventario.
+                        </label>
+                        <label>
+                            <input type="radio" value="4" name="p1"onclick="respuesta(1,this)">Productividad diferenciada de personas y máquinas.
+                        </label>
+                    </section>
+                    <section id="p2">
+                        <h5>Cantidad de empleados despedidos en el periodo t, corresponde al modelo:</h5>
+                        <label>
+                            <input type="radio" value="1" name="p2"onclick="respuesta(2,this)">Metodo no lineal.
+                        </label>
+                        <label>
+                            <input type="radio" value="2" name="p2"onclick="respuesta(2,this)">Regla lineal de decisión
+                        </label>
+                        <label>
+                            <input type="radio" value="4" name="p2"onclick="respuesta(2,this)">Respuesta inmediata
+                        </label>
+                        <label>
+                            <input type="radio" value="3" name="p2"onclick="respuesta(2,this)">Programación matemática
+                        </label>
+                    </section>
+
+                    <br>
+            <div class="centrar2">
+                    <button onclick="corregir()">Verificar</button>
+            </div>
+                <br>
+            <div class="centrar2">
+                    <h5>Aciertos: <span id="resultado"></span></h5>/3
+            </div>
+            <br>
+            
+            <div class="centrar2">
+                    <button><a href="">Nuevo intento</button>
+            </div>
+
+                <br>
+
+
+            <div class="centrar2">
+                    <h5><a href="../index.html">Página principal</a></h5>
+            </div>
+                <br>
+
+        </div>
+        <script src="script.js"></script>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>
