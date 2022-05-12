@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>3.2.1.3 Inventarios con producción y sin déficit</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/logos.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1> Planeación y Control de la Producción</h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="3.2.1.2 Inventarios sin producción y con déficit.html"><i class="icon-left-open-outline"></i>3.2.1.2 Inventarios sin producción y con déficit</a></li>
+                    <li><a href="3.2.1.4 Inventarios con producción y con déficit.html">3.2.1.4 Inventarios con producción y con déficit<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>3.2.1.3 Inventarios con producción y sin déficit</h3>
+                    <p>&nbsp &nbsp &nbsp El modelo de inventario con producción y sin déficit es aquel en el cual se considera una tasa de producción fija y tiene asociados a la demanda, los costos por ordenar, los costos por llevar inventario, el costo unitario del producto individual, se puede decir que es un modelo que relaciona la tasa de producción a tasa constante con la demanda (Axsäter et al., 2012; Khojasteh, 2016; Robert Jacobs et al., 2011; Shaaban & Hudson, 2014).</p>
+                    <p>&nbsp &nbsp &nbsp La fórmula general que sirve para representar este modelo es la siguiente:</p>
+                     <div class="centrar">
+                        <img src="https://drive.google.com/uc?export=download&id=1tr6caOLu_q8wIdeMzIXqhXrpjaUdl2mV">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Donde:</p>
+                    <ul>
+                        <li>Q = Lote económico (Cantidad/periodo).</li>
+                        <li>k= Costo por ordenar ($/artículos/periodo).</li>
+                        <li>d = Demanda (Artículos/período).</li>
+                        <li>c = Costo unitario ($/articulo/periodo).</li>
+                        <li>h = Costo por llevar inventario ($/artículos/período).</li>
+                        <li>q = Tasa de producción (Artículos/período).</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Y cuya representación gráfica es la siguiente:</p>
+                     <div class="centrar">
+                        <img src="https://drive.google.com/uc?export=download&id=1EPsSi0UXnCzzS1uJXNz2j0QZX885V_7d">
+                    </div>                    
+                    <p>&nbsp &nbsp &nbsp Como se puede observar en la figura 16, es evidente que la demanda es decreciente a tasa constante en el tiempo, así como la tasa de producción, y que las cantidades de lote económico Q a entregar, son iguales en todos los períodos involucrados, por lo que de la ecuación 19 se desprenden diversos elementos relacionados con el costo total como a continuación se muestra:</p>
+                     <div class="centrar">
+                        <img src="https://drive.google.com/uc?export=download&id=1_-1mMU649qeQb5FzGFMD4tOZHOYBJY1l">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Donde:</p>
+                    <ul>
+                        <li>CT= Costo total del inventario ($/periodo).</li>
+                        <li>Q = Lote económico (Cantidad/periodo).</li>
+                        <li>k= Costo por ordenar ($/artículos/periodo).</li>
+                        <li>d = Demanda (Artículos/período).</li>
+                        <li>c = Costo unitario ($/articulo/periodo)</li>
+                        <li>h = Costo por llevar inventario ($/artículos/período).</li>
+                        <li>q = Tasa de producción (Artículos por periodo).</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp El costo total se encuentra estrechamente vinculado a la cantidad económica del pedido o lote económico “Q”, que como se mencionó anteriormente permite equilibrar los costos del inventario y los costos de emitir una orden de producción, y permite al planeador de la producción estimar los costos totales de su toma de decisiones en el mediano plazo, al mismo tiempo derivado del concepto de lote económico se desprenden diversas ecuaciones que a continuación se muestran, que son la de número de periodos de entrega y la de duración del periodo individual tanto con existencias como con déficit y el nivel máximo de inventarios, las cuáles se muestran a continuación:</p>
+                     <div class="centrar">
+                        <img src="https://drive.google.com/uc?export=download&id=1AHyLnLDAW7QFCKVXevLgwBK1WzzfIT6n">
+                    </div>
+                    <p>&nbsp &nbsp &nbsp Donde:</p>
+                    <ul>
+                        <li>T = Duración del período.</li>
+                        <li>t1 = Periodo con tasa de producción.</li>
+                        <li>t2 = Periodo con demanda.</li>
+                        <li>n = Número de periodos de entrega.</li>
+                        <li>Q = Lote económico (Cantidad/periodo).</li>
+                        <li>d = Demanda (Artículos/período)</li>
+                        <li>q = Tasa de producción.</li>
+                        <li>IMAX= Nivel máximo de inventarios</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que una compañía Mueblera tiene un pedido de 10000 muebles, con un costo por llevar inventario del 20% de la demanda, un costo por ordenar de $450.00 por lote, costo unitario de $1000 por mueble, una tasa de producción de 15000 muebles por lo que el gerente de producción desea saber, de qué tamaño serán los lotes de producción a entregar, así como el costo total del inventario involucrado, el tamaño de cada periodo de entrega, así como el número de periodos de entrega.</p>
+                    <p>&nbsp &nbsp &nbsp Solución</p>
+                    <p>&nbsp &nbsp &nbsp Datos:</p>
+                    <ul>
+                        <li>c = $1000.00 por mueble.</li>
+                        <li>k = $450 por lote.</li>
+                        <li>d = 10000 muebles por año.</li>
+                        <li>h= 0.2*10000= $2000.</li>
+                        <li>q = 15000 muebles por año.</li>
+                    </ul>
+                    <p>Sustituyendo en (19) se tiene que:</p>
+                    <p>Q= √2(450)(10000)/(1000)(2000)(1−10000/15000) = 3.67 artículos por periodo.</p>
+                    <p>Para saber la duración del periodo se sustituye en (22):</p>
+                    <p>T = 3.67/10000 =.000367∗365, nos da 1 lote cada 0.134 días, es decir cada 3 horas.</p>
+                    <p>El número de periodos de entrega se obtiene sustituyendo en (14):</p>
+                    <p>n = 10000/3.67=2725 entregas.</p>
+                    <p>El nivel máximo de inventario se obtiene de (25):</p>
+                    <p>IMAX = (3.67)(1-10000/15000) = 1.22 artículos por periodo.</p>
+                    <p>El costo total del inventario se realiza sustituyendo en (13):</p>
+                    <p>CT = (1000)(10000) + 450 * (10000/2.5) + ((2.5−2.01)^2)/2 * 2000 + (2.01^2/2.5) * 500 = $11,801,048.12</p>
+                </div>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>
