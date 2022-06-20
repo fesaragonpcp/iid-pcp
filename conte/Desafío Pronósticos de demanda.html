@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Desafío Pronósticos de demanda</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+
+            <section id="Banner">
+                <h2>Pronósticos de demanda</h2>
+                <div class="quiz">
+                    <section id="p0">
+                        <br><br>
+                        <h5>Aquellos que carecen de un análisis analítico bien estructurado y que se carece de información numérica o cuantitativa histórica.</h5>
+                        <label>
+                            <input type="radio"  name="p0" >Encuestas
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0" id="correct1">Pronósticos cualitativos
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Pronósticos cuantitativos
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Promedios móviles
+                        </label>
+                    </section>
+                    <section id="p1">
+                        <h5>Es bastante recurrente sobre todo cuando no se cuenta con información cuantitativa, pero se tiene a la mano la participación de expertos dentro de la misma empresa.</h5>
+                        <label>
+                            <input type="radio"  name="p1" id="correct2">Panel de expertos
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Encuestas
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Método delphi
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Pronósticos cualitativos
+                        </label>
+                    </section>
+                    <section id="p2">
+                        <h5>Su comportamiento puede estar ocasionado ó estimulado por uno o más factores, que requieren de un análisis más exhaustivo.</h5>
+                        <label>
+                            <input type="radio"  name="p2" id="correct3">Modelos causales
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Análisis de regresión simple
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Encuestas
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Pronósticos cualitativos
+                        </label>
+                    </section>
+                    <section id="p3">
+                        <h5>Es un método estadístico que relaciona a dos variables, en este caso el modelo se comporta en función de la causalidad de una variable sobre la otra.</h5>
+                        <label>
+                            <input type="radio"  name="p3">Desviación media absoluta
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3">Suavización exponencial
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3">MFE
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3" id="correct4">y=a + bx
+                        </label>
+                    </section>
+                    <section id="p4">
+                        <h5>𝐹𝑡=(𝐴𝑡−𝑛+𝐴𝑡−𝑛−1+ ...+ 𝐴𝑡−1)/n</h5>
+                        <label>
+                            <input type="radio"  name="p4">Suavización exponencial
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4">Tracking Signal
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4" id="correct5">Promedios móviles
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4">Modelos de series temporales
+                        </label>
+                    </section>
+                    <section id=Banner>
+                        <div class="text">
+                            <p>Solo tendrás una oportunidad para resolverlo al dar clic en comprobar se te mostrara los aciertos obtenidos y se te redireccionara al temario del módulo.</p>
+                        </div>
+                    </section>
+                    <br>
+                    <div class="centrar2">
+                        <button onclick="result()"><a href="Pronósticos de demanda.html">Comprobar</a></button>  
+                                          
+                    </div>
+
+                    <script type="text/javascript">
+
+                        function result() {
+
+                            var score = 0;
+
+                            if (document.getElementById("correct1").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct2").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct3").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct4").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct5").checked)
+                            {
+                                score++;
+                            }     
+
+                            alert("Total de aciertos:" + score);
+                        }
+                    </script>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

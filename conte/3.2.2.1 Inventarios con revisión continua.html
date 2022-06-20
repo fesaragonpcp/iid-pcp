@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>3.2.2.1 Inventarios con revisión continua</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="3.2.2 Inventarios probabilísticos.html"><i class="icon-left-open-outline"></i>3.2.2 Inventarios probabilísticos</a></li>
+                    <li><a href="3.2.2.2 Inventarios con revisión periódica.html">3.2.2.2 Inventarios con revisión periódica<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>3.2.2.1 Inventarios con revisión continua</h3>
+                    <p>&nbsp &nbsp &nbsp En el estudio de este tipo de inventarios es importante considerar que se refiere a aquellos tipos de inventarios en los cuáles en determinado tiempo es posible que se supere la barrera de inexistencia, considerando una demanda variable a través del tiempo y bajo un esquema de revisión constante de los niveles de existencia, pero también puede darse el cado de tener una demanda constante pero tiempos de entrega variables (Axsäter, 2011; Axsäter et al., 2012; Robert Jacobs et al., 2011). en la figura 18 se puede visualizar este caso.</p>
+                    <div class="centrar">
+                        <img src="https://drive.google.com/uc?export=download&id=1M4_IJbQTQrBRfwNhMzSZmcqcquiS9Qsn">
+                    </div>
+                    <div class="centrar5">Figura 18 Modelo de inventario con revisión continua (Elaboración propia basado en Jiang (2013)).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp Analizando la figura 18 se puede ver que dos factores influyen en este tipo de inventarios el primero es tiempo de entrega y en segundo es el nivel de demanda, por lo que ambos tienen repercusión directa en el cálculo del punto de reorden y el inventario de seguridad que son los dos elementos que es necesario calcular.</p>
+                    <p>&nbsp &nbsp &nbsp Para poder determinar el cálculo del punto de reorden es necesario entender diversos factores que influyen en el cálculo del inventario de seguridad, entre los que se pueden mencionar:</p>
+                    <ul>
+                        <li>La medición de la incertidumbre de la demanda.</li>
+                        <li>La medición de la disponibilidad del producto.</li>
+                        <li>Las políticas de reabastecimiento.</li>
+                        <li>Evaluación del nivel de ciclo de servicio y tasa de surtido.</li>
+                        <li>Impacto de la disponibilidad de producto.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Derivado de lo anterior se puede decir que la demanda tiene un componente sistémico y un componente aleatorio, en este sentido la estimación del componente aleatorio es la medida de la incertidumbre de la demanda el cuál es analizado por la desviación estándar de la demanda, por lo que es necesario integrar una notación que permita identificar todas aquellas variables involucradas.</p>
+
+                    <div class="centrar5">
+                        <p>D<sub>L</sub> = L &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  (35)</p>
+                    </div>
+
+                    <div class="centrar5">
+                        <p>&sigma;<sub>L</sub> = &sigma;<sub>D</sub>×&radic;L  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (36)</p>
+                    </div>
+
+                    <div class="centrar5"><p>CSL = F(ROP×D<sub>L</sub>×&sigma;<sub>L</sub>)&nbsp &nbsp &nbsp &nbsp &nbsp (37)</p></div>
+
+                    <div class="centrar5"><p>SS = F<sub>s</sub><sup>-1</sup>&sigma;<sub>L</sub> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  (38)</p></div>
+
+                    <div class="centrar5"><p>ROP= D<sub>L</sub> + SS &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  (39)</p></div>
+
+                    <p>&nbsp &nbsp &nbsp Donde:</p>
+                    <ul>
+                        <li>D<sub>L</sub>=Demanda promedio durante el tiempo de entrega.</li>
+                        <li>&sigma;<sub>L</sub> = Desviación estándar de la demanda durante el tiempo de entrega.</li>
+                        <li>&sigma;<sub>D</sub>= Desviación estándar de la demanda por periodo.</li>
+                        <li>D = demanda.</li>
+                        <li>L = Tiempo de entrega.</li>
+                        <li>CSL = Nivel de servicio del ciclo es decir probabilidad de no caer en inexistencias.</li>
+                        <li>SS = Inventario de seguridad.</li>
+                        <li>ROP = Punto de reorden.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Ejercicio</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que una empresa tiene una demanda de 2500 artículos por semana, un tiempo de entrega de dos semanas, así como después de un análisis de la demanda se consideró que la desviación estándar de la demanda quedó en 500, el punto de reorden se ubicó en 6000 artículos. por lo que el empresario desea saber cuál es su inventario de seguridad.</p>
+                    <p>&nbsp &nbsp &nbsp Solución</p>
+                    <p>&nbsp &nbsp &nbsp Datos:</p>
+                    <ul>
+                        <li>D = 2 500/semana;</li>
+                        <li>&sigma;<sub>D</sub> = 500</li>
+                        <li>L = 2 semanas</li>
+                        <li>ROP = 6 000</li>
+                    </ul>
+                    <p>D<sub>L</sub> = DL = (2 500 unidades por semana)(2 semanas) = 5000 unidades en las 2 semanas.</p>
+                    <p>SS = ROP - D<sub>L</sub> = 6 000 - 5 000 = 1 000 unidades.</p>
+                </div>
+            </section>  
+             
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

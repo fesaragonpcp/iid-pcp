@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>4.3.1 Modelo de respuesta inmediata</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="4.3 Regla lineal de decisión.html"><i class="icon-left-open-outline"></i>4.3 Regla lineal de decisión</a></li>
+                    <li><a href="4.3.2 Modelo basado en programación matemática.html">4.3.2 Modelo basado en programación matemática<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>4.3.1 Modelo de respuesta inmediata</h3>
+                    <p>&nbsp &nbsp &nbsp Este modelo involucra diversos elementos como son:</p>
+                    <ul>
+                        <li>Variaciones de la demanda proveniente de múltiples fuentes.</li>
+                        <li>Tasas de producción variables.</li>
+                        <li>Productividad diferenciada de personas y máquinas.</li>
+                        <li>Paros por mantenimiento.</li>
+                        <li>Variaciones en la calidad de los productos.</li>
+                        <li>Diferenciación en los tiempos de entrega de los productos.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Se puede considerar que este modelo se basa en cuatro supuestos los cuales conllevan diversas características como a continuación se muestra:</p>
+
+                    <p>1.- Variación de la fuerza laboral.</p>
+                    <ul>
+                        <li>Despido de personal.</li>
+                        <li>Contratación de personal nuevo y/o eventual.</li>
+                        <li>Aumento de tiempo extra para personal sindicalizado.</li>
+                    </ul>
+                    <p>2.- Variación de los niveles de inventario.</p>
+                    <ul>
+                        <li>Disminuyendo los niveles de inventario.</li>
+                        <li>Aumentando los niveles de inventario, trabajando en un ambiente make to stock</li>
+                    </ul>
+
+                    <p>3.- Subcontratación.</p>
+                    <ul>
+                        <li>Buen trato con la competencia.</li>
+                        <li>Agilizar el trato con proveedores y clientes.</li>          
+                    </ul>
+
+                    <p>4.- Tiempo extra.</p>
+                    <ul>
+                        <li>Personal de preferencia sindicalizado.</li>
+                        <li>Contar con el presupuesto para tiempo extra.</li>                        
+                    </ul>
+
+
+                    <p>&nbsp &nbsp &nbsp A continuación, mediante el uso de un ejemplo se puede ejemplificar este modelo.</p>
+                    <p>&nbsp &nbsp &nbsp Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que una empresa cuenta con los datos base para iniciar operaciones, como se muestra en la tabla 24.</p>
+                    <br>
+                    <div class="centrar5">Tabla 24 Modelo de planeación agregada para iniciar operaciones</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1bxo7bDZR4LFddAFXhFS8AZC8CLOgR7sj">
+                    </div>
+                    <div class="centrar5"> Ejemplo de Modelo de planeación agregada a iniciar operaciones (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp El modelo de planeación agregada mostrado en la tabla 24 indica un periodo de planeación de 6 meses, considerando días hábiles por mes, en función de los días de descanso obligatorio y días festivos, asimismo se desglosan los costos relacionados con diversos temas como materiales por unidad, costo de mantenimiento, costo por déficit o agotamiento de reservas, costo de contratar, despido, horas normales y tiempo extra, y horas de trabajo por unidad, e información relacionada con el inventario inicial y de seguridad, que proviene del plan maestro de producción, también información relacionada con los trabajadores en relación con el número inicial a trabajar y número de horas laboradas por día en tiempo normal.</p>
+                    <p>&nbsp &nbsp &nbsp Con esta información, se lleva a cabo el análisis de las distintas variantes propuestas previamente, como se muestra a continuación</p>
+                    <p>1.- Variación de la fuerza laboral</p>
+                    <div class="centrar5">Tabla 25 Modelo de variación de la fuerza laboral.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1oD_3sByxXhsv3oXBmj96wtxaNddHCXyE">
+                    </div>
+                    <div class="centrar5"> Ejemplo de variación de la fuerza laboral (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp El modelo de variación de la fuerza laboral implica contratar y despedir fuerza laboral, con la condición de que la producción permanezca exacta, los datos provienen de los mostrados en la tabla 25, en donde el mecanismo para el cálculo de cada uno de los elementos que lo conforman es el siguiente:</p>
+                    <ul>
+                        <li>Proyección de la demanda: Dato tomado de la tabla 24.</li>
+                        <li>Inventario inicial: Datos iniciales del problema.</li>
+                        <li>Reserva de seguridad: Se calcula como 25% de la demanda mensual.</li>
+                        <li>Requerimiento de producción: Es igual al pronóstico de la demanda más el inventario de seguridad menos el inventario inicial.</li>
+                        <li>Inventario final: Inventario inicial más requerimiento de producción menos pronóstico de demanda.</li>
+                        <li>Horas de producción requeridas: Requerimiento de producción por 3 horas requeridas por unidad.</li>
+                        <li>Días de trabajo por mes: Dato inicial tomado de la tabla 24.</li>
+                        <li>Horas por mes por trabajador: Números de días hábiles por 8 horas laborales diarias.</li>
+                        <li>Trabajadores requeridos: Horas de producción requeridas entre horas por mes por trabajador.</li>
+                        <li>Costo de contratación: Nuevos trabajadores contratados por $1500.00</li>
+                        <li>Trabajadores despedidos: Dato inicial del problema.</li>
+                        <li>Costo de los despidos: Trabajadores despedidos por $2500.00</li>
+                        <li>Costo horas laboradas: Horas de producción requeridas por $20.00</li>
+                    </ul>
+                    <p>2.- Variación de los niveles de inventario.</p>
+                    <div class="centrar5">Tabla 26 Modelo de variación de los niveles de inventario.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1WgjZGYL2nyykzqcqh_lno3VKRhBIdNnD">
+                    </div>               
+                     <div class="centrar5"> Ejemplo de Modelo de variación de los niveles de inventario (Elaboración propia).</div>
+                    <br><br>     
+                    <p>&nbsp &nbsp &nbsp El modelo de variación de los niveles de inventario implica realizar variaciones en los niveles de inventario así como en sus costos asociados, los datos provienen de los mostrados en la tabla 26, en donde el mecanismo para el cálculo de cada uno de los elementos que lo conforman es el siguiente:</p>
+                    <ul>
+                        <li>Proyección de la demanda: Dato tomado de la tabla 24.</li>
+                        <li>Inventario inicial: Datos iniciales del problema.</li>
+                        <li>Reserva de seguridad: Se calcula como 25% de la demanda mensual.</li>
+                        <li>Producción real: Horas de producción disponibles entre 3 horas por unidad.</li>
+                        <li>Inventario final: Inventario inicial más requerimiento de producción menos pronóstico de demanda.</li>
+                        <li>Horas de producción disponibles: Días hábiles por mes por 8 horas por día por 20 trabajadores.</li>
+                        <li>Días de trabajo por mes: Dato inicial tomado de la tabla 24.</li>
+                        <li>Horas por mes por trabajador: Números de días hábiles por 8 horas laborales diarias.</li>
+                        <li>Número de trabajadores: Dato inicial del problema.</li>
+                        <li>Unidades faltantes: Datos iniciales del problema.</li>
+                        <li>Costo de los faltantes: Unidades faltantes por $200.00</li>
+                        <li>Unidades sobrantes: Inventario final menos inventario de seguridad (Solo se toma en cuenta si la cantidad es un número positivo.</li>
+                        <li>Costo del inventario: Unidades sobrantes por $50.00.</li>
+                        <li>Costo de horas laboradas: Horas de producción disponibles por $20.00.</li>
+                    </ul>
+                    <p>3.- Subcontratación.</p>
+                    <div class="centrar5">Tabla 27 Modelo de subcontratación.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1DihSAVaR4Vk9n7z7TGAtGW9cKaCgtTnR">
+                    </div>      
+                     <div class="centrar5"> Ejemplo de Modelo de subcontratación (Elaboración propia).</div>
+                    <br><br>              
+                    <p>&nbsp &nbsp &nbsp El modelo de subcontratación implica realizar asignaciones de fabricación a empresas externas lo cual conlleva costos asociados, los datos provienen de los mostrados en la tabla 27, en donde el mecanismo para el cálculo de cada uno de los elementos que lo conforman es el siguiente:</p>
+                    <ul>
+                        <li>Proyección de la demanda: Dato tomado de la tabla 24.</li>
+                        <li>Inventario inicial: Datos iniciales del problema.</li>
+                        <li>Reserva de seguridad: Se calcula como 25% de la demanda mensual.</li>
+                        <li>Requerimiento de producción: Horas de producción disponibles entre 3 horas por unidad.</li>
+                        <li>Inventario final: Inventario inicial más requerimiento de producción menos pronóstico de demanda.</li>
+                        <li>Horas de producción disponibles: Días hábiles por mes por 8 horas por día por 20 trabajadores.</li>
+                        <li>Días de trabajo por mes: Dato inicial tomado de la tabla 24.</li>
+                        <li>Horas por mes por trabajador: Números de días hábiles por 8 horas laborales diarias.</li>
+                        <li>Número de trabajadores: Dato inicial del problema</li>
+                        <li>Producción real: Horas de producción disponibles entre 3 horas por unidad.</li>
+                        <li>Unidades subcontratadas: Requerimiento de producción menos producción real.</li>
+                        <li>Costo de subcontratación: Unidades subcontratadas por $800.00.</li>
+                        <li>Costo del inventario: Unidades sobrantes por $50.00.</li>
+                        <li>Costo de horas laboradas: Horas de producción disponibles por $20.00.</li>
+                    </ul>
+                    <p>4.- Tiempo extra.</p>
+                    <div class="centrar5">Tabla 28 Modelo de tiempo extra.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1QalwW5MvNslK6H6l-pyfRmPUQonO38NX">
+                    </div>  
+                     <div class="centrar5"> Ejemplo de Modelo de tiempo extra (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp El modelo de tiempo extra implica incrementar el número de horas laboradas sobre todo del personal de base lo cual conlleva costos asociados, los datos provienen de los mostrados en la tabla 28, en donde el mecanismo para el cálculo de cada uno de los elementos que lo conforman es el siguiente:</p>
+                    <ul>
+                        <li>Proyección de la demanda: Dato tomado de la tabla 24.</li>
+                        <li>Inventario inicial: Datos iniciales del problema.</li>
+                        <li>Reserva de seguridad: Se calcula como 25% de la demanda mensual.</li>
+                        <li>Producción con variación regular: Horas de producción disponibles entre 3 horas por unidad.</li>
+                        <li>Horas de producción disponibles: Días hábiles por mes por 8 horas por día por 20 trabajadores.</li>
+                        <li>Días de trabajo por mes: Dato inicial tomado de la tabla 24.</li>
+                        <li>Número de trabajadores: Dato inicial del problema</li>
+                        <li>Unidades disponibles sin tiempo extra: Inventario inicial más producción con variación regular menos proyección de la demanda (redondearla).</li>
+                        <li>Unidades del tiempo extra: Se convierte a positivo, si es que es negativo, las unidades disponibles sin tiempo extra.</li>
+                        <li>Unidades sobrantes: Unidades disponibles sin tiempo extra - reserva de seguridad (Solo si la cantidad es positiva).</li>
+                        <li>Costo del inventario: Unidades sobrantes por $50.00.</li>
+                        <li>Costo de horas laboradas: Horas de producción disponibles por $20.00.</li>                        
+                    </ul>
+                    <p>Resumen</p>
+                    <div class="centrar5">Tabla 29 Resumen de las cuatro estrategias..</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1QalwW5MvNslK6H6l-pyfRmPUQonO38NX">
+                    </div>
+                     <div class="centrar5"> Ejemplo de Resumen de las cuatro estrategias (Elaboración propia).</div>
+                    <br><br> 
+                    <p>&nbsp &nbsp &nbsp Como se puede observar en la tabla 28, el costo más bajo es trabajar con fuerza laboral constante e inventario variable, considerando un escenario, en el cual se cuenta con personal sindicalizado y se dispone de poco capital para subcontratar y otorgar aumento de horas y tiempo extra, se da también en casos en los cuáles el costo de mano de obra en tiempo regular y tiempo extra es elevado, así como en lugares donde la estabilidad laboral es lo común.</p>
+                </div>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

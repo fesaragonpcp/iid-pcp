@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Desafío Estrategias de manufactura</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+
+            <section id="Banner">
+                <h2>Estrategias de manufactura</h2>
+                <div class="quiz">
+                    <section id="p0">
+                        <br><br>
+                        <h5>¿El periodo de duración de la estrategia a largo plazo es de?</h5>
+                        <label>
+                            <input type="radio"  name="p0">3 a 18 meses
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0" id="correct1"> 1 año a 5 años
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0"> Al menos 10 años
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Mas de 5años
+                        </label>
+                    </section>
+                    <section id="p1">
+                        <h5>¿Se le conoce como planeación estratégica?</h5>
+                        <label>
+                            <input type="radio"  name="p1" id="correct2">Estrategias a largo plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Estrategias a corto plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Estrategias a mediado plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Estrategias que requieren toda la información
+                        </label>
+                    </section>
+                    <section id="p2">
+                        <h5>Se analizan factores como conómicos, financieros, de manufactura, etc. ¿Corresponde al tipo de estrategia a?</h5>
+                        <label>
+                            <input type="radio"  name="p2">Estrategias a largo plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Estrategias a corto plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2" id="correct3" >Estrategias a mediado plazo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Planeación estratégica
+                        </label>
+                    </section>
+                    <section id="p3">
+                        <h5>Se enfoca en reabastecer el inventario de producto terminado.</h5>
+                        <label>
+                            <input type="radio"  name="p3" id="correct4" >Make to Stock
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3">Engineering to order
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3">MPS
+                        </label>
+                        <label>
+                            <input type="radio"  name="p3">Make to order
+                        </label>
+                    </section>
+                    <section id="p4">
+                        <h5>Consta de un número de diseños en comparación a un mayor volumen de productos y no necesita de una mano de obra especializada.</h5>
+                        <label>
+                            <input type="radio"  name="p4">Procesamiento continuo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4">Procesos de taller de trabajo
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4">Fabricación bajo pedido
+                        </label>
+                        <label>
+                            <input type="radio"  name="p4" id="correct5" >Procesamiento de flujo o repetitivo
+                        </label>
+                    </section>
+                    <br>
+                    <div class="centrar2">
+                        <button onclick="result()">Verificar</button>                    
+                    </div>
+
+                    <script type="text/javascript">
+
+                        function result() {
+
+                            var score = 0;
+
+                            if (document.getElementById("correct1").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct2").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct3").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct4").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct5").checked)
+                            {
+                                score++;
+                            }     
+
+                            alert("Total de aciertos:" + score);
+                            document.write("Si tu total de aciertos fue de 5, felicidades, en caso contario, no te desanimes y te invitamos a repasar nuevamente los temas");
+
+                           
+
+                        }
+                    </script>
+
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

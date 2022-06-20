@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>2.4.1 Error del pronóstico</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="2.4 Seguimiento y control del pronóstico.html"><i class="icon-left-open-outline"></i>2.4 Seguimiento y control del pronóstico</a></li>
+                    <li><a href="2.4.2 Desviación media absoluta.html">2.4.2 Desviación media absoluta<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>2.4.1 Error del pronóstico</h3>
+                    <p>&nbsp &nbsp &nbsp El error del pronóstico se calcula mediante lo que se denomina MFE (Mean Forecast Error por sus siglas en inglés) que se puede traducir como error medio del pronóstico, y que se representa mediante la siguiente fórmula:</p>
+                    <br>
+                    <div class="centrar5">
+                        <p>MFE = <sup>&Sigma;<sup>n</sup><sub>t=1</sub>(A<sub>t</sub> - F<sub>t</sub>)</sup>/<sub>n</sub>&nbsp &nbsp &nbsp &nbsp &nbsp (5)</p>
+                    </div>
+
+                    <p>Donde:</p>
+                    <ul>
+                        <li>MFE = Error medio del pronóstico.</li>
+                        <li>A<sub>t</sub> = Demanda actual.</li>
+                        <li>F<sub>t</sub> = Pronóstico actual.</li>
+                        <li>n = Número total de datos.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp A manera de ejemplo se analizan los datos desarrollados en cada uno de los pronósticos de promedio móvil, suavización exponencial y regresión simple para determinar el comportamiento de su error medio del pronóstico, en la siguiente tabla:</p>
+                    <div class="centrar5">Tabla 21 Ejemplo de medición de MFE.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=16NUwfm2rPpkGTr-EV0_8byHvhrpmrkJM">
+                    </div>
+                    <div class="centrar5">Ejemplo de medición MFE (Elaboración propia).</div>
+                    <br>
+                    <p>&nbsp &nbsp &nbsp En la tabla 21 se puede observar que haciendo un comparativo de las sumatorias de los distintos errores medios de los pronósticos analizados hasta el momento se tiene que el que contiene una mayor desviación respecto a cero es el pronóstico de suavización exponencial con alfa igual a 0.2 y el que proporciona una menor desviación es α = 0.9, lo cuál es un indicativo de que la suavización exponencial con este valor es la que presenta menos variaciones, pero como indicador no es suficiente es necesario profundizar más para validar este aspecto.</p>
+                </div>
+            </section>   
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

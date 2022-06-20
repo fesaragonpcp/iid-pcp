@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Desafío Programación y control de piso</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+
+            <section id="Banner">
+                <h2>Programación y control de piso</h2>
+                <div class="quiz">
+                    <section id="p0">
+                        <br><br>
+                        <h5> La programación y control en piso, implica todas aquellas actividades tendientes a monitorear, controlar y retroalimentar las actividades de manufactura que permitirán al tomador de _______ en un sistema productivo, planear, controlar o corregir la secuenciación de todos los procesos productivos; lo cual tiene una clara influencia en el entorno total de la cadena de _____, dado que permite por un lado determinar los tiempos de entrega a los diversos proveedores en cuanto a las materias _____ indispensables para arrancar las actividades de manufactura y por otro lado a los clientes para comprometerse en los tiempos de entrega de producto terminado (Chase & Aquilano, 2001).</h5>
+                        <label>
+                            <input type="radio"  name="p0" >Decisiones, primas y suministros
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0" id="correct1">Decisiones, suministros y primas
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Decisiones, valor y primas
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Decisiones, valor, productos
+                        </label>
+                    </section>
+                    <section id="p1">
+                        <h5> La programación y control en piso hace acopio de herramientas previamente probadas y consolidadas, como son los pronósticos, la planeación maestra, la planeación maestra de la producción y la planeación de ___________ de materiales, con la finalidad de determinar los tiempos de entrega y la secuenciación requerida en el proceso productivo, dando un balance adecuado de _________ a todos los niveles y cumplir las expectativas tanto de la organización como de los _________ (Fúquene-Retamoso et al., 2007).</h5>
+                        <label>
+                            <input type="radio"  name="p1">los requerimientos, las materias y clientes
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">requerimiento, las materias y clientes
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">los requerimientos, recursos y clientes
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1" id="correct2">requerimiento, recursos y clientes
+                        </label>
+                    </section>
+
+                    <section id=Banner>
+                        <div class="text">
+                            <p>Solo tendrás una oportunidad para resolverlo al dar clic en comprobar se te mostrara los aciertos obtenidos y se te redireccionara al temario del módulo.</p>
+                        </div>
+                    </section>
+                    <br>
+            <div class="centrar2">
+
+                    <button onclick="result()"><a href="Planeación agregada de la producción.html">Comprobar</a></button>
+            </div>
+
+                    <script type="text/javascript">
+
+                        function result() {
+
+                            var score = 0;
+
+                            if (document.getElementById("correct1").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct2").checked)
+                            {
+                                score++;
+                            }
+
+                            alert("Total de aciertos:" + score);
+                        }
+                    </script>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

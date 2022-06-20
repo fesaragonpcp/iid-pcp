@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>4.3.2 Modelo basado en programación matemática</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="4.3.1 Modelo de respuesta inmediata.html"><i class="icon-left-open-outline"></i>4.3.1 Modelo de respuesta inmediata</a></li>
+                    <li><a href="Ejercicios propuestos PAP.html">Ejercicios propuestos<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>4.3.2 Modelo basado en programación matemática</h3>
+                    <p>&nbsp &nbsp &nbsp De acuerdo con Jacobs (2011), la programación matemática es una técnica que hace uso de técnicas de programación lineal y no lineal, con la finalidad de optimizar las operaciones productivas en un contexto de un sistema de manufactura, como se muestra a continuación.</p>
+                    <p>&nbsp &nbsp &nbsp Con base en Jacobs (2011) se desarrolla un modelo de programación lineal que puede permitir a la alta dirección, niveles de inventario, niveles de fuerza de trabajo y tasas de producción en un horizonte de planeación de 12 meses. En lo particular la función objetivo se encarga de minimizar directamente los costos relacionados con el pago de nómina, tiempo extra, contratación y despido, así como inventarios. También se incorpora lo que es el nivel de inventario deseado y de fuerza de trabajo al final de año. El modelo es mostrado a continuación:</p>
+                    <p>Minimizar:</p>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=12-2HgqJ1V7VeXLw6P3g_pZKe26sAhlzT">
+                    </div>
+                    <p>Sujeto a</p>
+                    <ul>
+                        <li>1. Restricción de inventario.</li>
+                        <li>2. Restricción de mano de obra en tiempo regular.</li>
+                        <li>3. Restricción de mano de obra en tiempo extra.</li>
+                        <li>4. Restricción del cambio de fuerza laboral.</li>
+                        <li>5. Condiciones iniciales.</li>
+                    </ul>
+                    <p>Donde:</p>
+                    <ul>
+                        <li>CH = Costo de contratar personal.</li>
+                        <li>CF = Costo de despedir personal.</li>
+                        <li>CR = Costo mensual por empleado.</li>
+                        <li>CO = Costo unitario en tiempo extra.</li>
+                        <li>CI = Costo unitario de unidades en inventario.</li>
+                        <li>Ht = Cantidad de empleados contratados en el periodo t.</li>
+                        <li>Ft = Cantidad de empleados despedidos en el periodo t.</li>
+                        <li>Pt = Cantidad de unidades producidas en tiempo regular en el mes t.</li>
+                        <li>Ot = Cantidad de unidades producidas en tiempo extra en el mes t.</li>
+                        <li>Wt = Cantidad de personal utilizado en el mes t.</li>
+                        <li>It = Numero de unidades en existencia al final del mes t.</li>
+                        <li>Dt = Proyección de unidades demandadas en el mes t.</li>
+                        <li>A1 = Número de unidades producidas por empleado en un mes en tiempo regular.</li>
+                        <li>A2 = Número de unidades producidas por empleado en un mes en tiempo extra.</li>
+                        <li>A3 = Nivel inicial de inventario.</li>
+                        <li>A4 = Nivel de inicial de fuerza de trabajo.</li>
+                        <li>A5 = Nivel deseado de fuerza laboral al final del horizonte de planeación.</li>
+                        <li>A6 = Nivel deseado de inventario al final del horizonte de planeación.</li>
+                        <li>m = Número de meses en el horizonte de planeación.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp Ejemplo:</p>
+                    <p>&nbsp &nbsp &nbsp Suponga que una empresa reúne las siguientes condiciones generales:</p>
+                    <br>
+                    <div class="centrar5">Tabla 30 Propuesta inicial de modelo basado en programación matemática. </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1l8AoxT_cdHVxKu9RjKWY576XpTyqSMwj">
+                    </div>
+                    <div class="centrar5">Ejemplo de Modelo basado en programación matemática (Elaboración propia).</div>
+                    <br><br>
+                    <p>Solución</p>
+                    <p>&nbsp &nbsp &nbsp Se resueve la propuesta utilizando el software solver de Excel, mediante la utilización de 3 aproximaciones de solución, el metodo lineal, el no lineal y el evolutivo, obteniendo los siguientes resultados:</p>
+                    <ul>
+                        <li>1.- Con el modelo GRG no lineal</li>
+                    </ul>
+                    <div class="centrar5">Tabla 31 Propuesta inicial de modelo basado en programación no lineal. </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1ACIy5Y_rWbzd9eEG0KS2XwMWb3XDy7uc">
+                    </div>
+                    <div class="centrar5">Ejemplo de Modelo basado en programación no lineal (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp Con el uso del modelo no lineal se puede observar que el costo total permanece bajo no obstante que no se considera tiempo extra y se contratan solo 14 empleados y si hay un desequilibrio pues se despiden 19 empleados, asimismo los niveles de inventario son bastante elevados al principio, pero al final se equilibran. </p>
+                    <ul>
+                        <li>2.- Con el modelo de programación lineal simplex.</li>
+                    </ul>   
+                    <div class="centrar5">Tabla 32 Propuesta inicial de modelo basado en programación lineal. </div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1dPEq1w4TaMTsGekM8DC0ZjaQmIaWEQcw">
+                    </div>
+                    <div class="centrar5">Ejemplo de Modelo basado en programación lineal (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp Con el uso del modelo lineal se puede observar que el costo total se incrementa no obstante que no se considera tiempo extra y se contratan solo 14 empleados y no hay un desequilibrio pues se despiden 14 empleados, asimismo los niveles de inventario son bastante elevados al principio, pero al final se equilibran.</p>
+                    <ul>
+                        <li>3.- Con el modelo evolutivo.</li>
+                    </ul>
+                    <div class="centrar5">Tabla 33 Propuesta inicial de modelo basado en programación evolutiva.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1xGc7VU8jtvalC2RtLwZcg7Bi3fN9Kcqh">
+                    </div>
+                    <div class="centrar5">Ejemplo de Modelo basado en programación evolutiva (Elaboración propia).</div>
+                    <br><br>
+                    <p>&nbsp &nbsp &nbsp Con el uso del modelo lineal se puede observar que el costo total se incrementa no obstante que no se considera tiempo extra y se contratan solo 14 empleados y no hay un desequilibrio pues se despiden 14 empleados, aunque el costo de tiempo extra se eleva, asimismo los niveles de inventario son bastante elevados al principio, pero al final se equilibran.</p>
+                    <p>&nbsp &nbsp &nbsp Respuesta:</p>
+                    <p>&nbsp &nbsp &nbsp Por lo que al analizar los tres modelos se resuelve que el modelo elegido dadas las condiciones iniciales es el modelo que utiliza programación no lineal, dado que es el que proporciona el costo más bajo.</p>
+                </div>
+            </section>   
+
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

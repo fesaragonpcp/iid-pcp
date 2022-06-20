@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>2.4.3 Señal de rastreo</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+            <div class="navegacion">
+                <ul>
+                    <li><a href="2.4.2 Desviación media absoluta.html"><i class="icon-left-open-outline"></i>2.4.2 Desviación media absoluta</a></li>
+                    <li><a href="Ejercicios propuestos PD.html">Ejercicios propuestos<i class="icon-right-open-outline"></i></a></li>
+                </ul>
+            </div>
+            <section id="Banner">
+                <div class="texto">
+                    <h3>2.4.3 Señal de rastreo</h3>
+                    <p>&nbsp &nbsp &nbsp Conocido como TS (Tracking Signal, por sus siglas en inglés), es como su nombre la indica una señal que le indica al tomar de decisiones si el pronóstico está teniendo efectividad, de manera práctica se supone que, si la señal de rastreo del pronóstico se desvía de más menos 4, implica que el pronóstico es poco efectivo, en caso contrario se puede confiar en su efectividad, y se analiza mediante la siguiente formula:</p>
+                    <div class="centrar5">
+                        <p>TS = (n * MFE) / MAD &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (6)</p>
+                    </div>
+                    <p>Donde:</p>
+                    <ul>
+                        <li>TS = Señal de rastreo</li>
+                        <li>MAD = Desviación Media Absoluta.</li>
+                        <li>MFE = Error del pronóstico medio.</li>
+                        <li>n = Número total de datos.</li>
+                    </ul>
+                    <p>&nbsp &nbsp &nbsp A manera de ejemplo se analizan los datos desarrollados en cada uno de los pronósticos de promedio móvil, suavización exponencial y regresión simple para determinar el comportamiento de su señal de rastreo, en la siguiente tabla:</p>
+                    <div class="centrar5">Tabla 23 Ejemplo de medición TS.</div>
+                    <div class="centrar">
+                    <img src="https://drive.google.com/uc?export=download&id=1l2hhlyLqqMqn8UMb6-N-mywmsi8yEi7k">
+                    </div>
+                    <div class="centrar5">Ejemplo de medición de TS (Elaboración propia).</div>
+                    <br>
+                    <p>&nbsp &nbsp &nbsp Por lo que se puede analizar en la tabla 23, los comportamientos de los pronósticos son muy inestables en general a partir del 4 periodo, en donde para todos los casos se observa una gran propensión hacia la variación e inestabilidad, probablemente el que tenga un poco más de estabilidad debido a sus características de linealidad es el pronóstico que hace uso de la regresión lineal.</p>
+                </div>
+            </section>   
+
+             <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>

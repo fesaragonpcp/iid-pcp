@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Desafío Sistemas integrados de manufactura</title>
+        <link rel="stylesheet" href="css/estilos2.css">
+        <link rel="stylesheet" href="css/navegacion.css">
+
+    </head>
+
+        <body>
+
+            <header><h1><a href="../index.html"> Planeación y Control de la Producción</a></h1></header>
+
+            <section id="Banner">
+                <h2>Sistemas integrados de manufactura</h2>
+                <div class="quiz">
+                    <section id="p0">
+                        <br><br>
+                        <h5>Clasificación de las industrias manufactureras</h5>
+                        <label>
+                            <input type="radio"  name="p0">Comercio, construcción, servicios
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Productos especiales y servicios
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0" id="correct1">Primarias, secundarias y terciarias
+                        </label>
+                        <label>
+                            <input type="radio"  name="p0">Bienes y servicios
+                        </label>
+                    </section>
+                    <section id="p1">
+                        <h5>Realizan el proceso de transformación</h5>
+                        <label>
+                            <input type="radio"  name="p1">Industria manufacturera
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Industria productiva
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1">Industrias primarias
+                        </label>
+                        <label>
+                            <input type="radio"  name="p1"id="correct2">Industrias secundarias
+                        </label>
+                    </section>
+                    <section id="p2">
+                        <h5>Indica algunos pasos para integrar un sistema de manufactura.</h5>
+                        <label>
+                            <input type="radio"  name="p2">Coordinación del control de la producción y calidad en el proceso
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2"id="correct3">Integración del control de calidad e Integración del control de inventarios
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Uso de equipo informático y software de control
+                        </label>
+                        <label>
+                            <input type="radio"  name="p2">Integración de proveedores y acreedores 
+                        </label>
+                    </section>
+
+                    <section id=Banner>
+                        <div class="text">
+                            <p>Solo tendrás una oportunidad para resolverlo al dar clic en comprobar se te mostrara los aciertos obtenidos y se te redireccionara al temario del módulo.</p>
+                        </div>
+                    </section>
+                    <br>
+
+            <div class="centrar2">
+
+                    <button onclick="result()"><a href="Sistemas integrados de manufactura.html">Comprobar</a></button>
+            </div>
+
+                    <script type="text/javascript">
+
+                        function result() {
+
+                            var score = 0;
+
+                            if (document.getElementById("correct1").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct2").checked)
+                            {
+                                score++;
+                            }
+                            if (document.getElementById("correct3").checked)
+                            {
+                                score++;
+                            }
+
+                            alert("Total de aciertos:" + score);
+                        }
+                    </script>
+            </section>
+            <footer>
+                <br>
+                <h4>Este sitio WEB es el resultado del proyecto</h4>
+                <h4>PAPIME: PE106421.</h4>
+                <h4>Este sitio es desarrollado por el alumno</h4>
+                <h4>Marco Antonio Solis Tapia, bajo la supervisión del</h4>
+                <h4>Dr. Ulises Mercado Valenzuela de la Facultad de Estudios</h4>
+                <h4>Superiores Aragón UNAM.</h4>
+                <br>
+            <div class="centrar3">
+                    <img src="Images/ft.png" align="left">
+                    <h4> Este sitio se encuentra bajo la licencia de: <a href="https://creativecommons.org/licenses/by/4.0/">Licencia de Creative Commons.</a></h4>
+            </div>
+            <br>
+            </footer>
+        </body>
+</html>
